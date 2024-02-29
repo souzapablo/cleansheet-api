@@ -9,7 +9,7 @@ Say goodbye to scattered spreadsheets and hello to seamless data management! Wit
 - Compare seasons: see your progress over time and benchmark against other players.
 - Focus on the fun: spend less time managing data and more time enjoying the game.
 
-# Tech Stack
+## Tech Stack
 
 - .NET 8.0
 - Visual Studio Code
