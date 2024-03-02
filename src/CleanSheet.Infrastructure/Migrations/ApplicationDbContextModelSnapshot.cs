@@ -73,7 +73,10 @@ namespace CleanSheet.Infrastructure.Migrations
                     b.Property<int>("Overall")
                         .HasColumnType("int");
 
-                    b.Property<int>("PlayerPosition")
+                    b.Property<int>("Position")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Role")
                         .HasColumnType("int");
 
                     b.Property<Guid>("TeamId")

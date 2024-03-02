@@ -78,7 +78,8 @@ namespace CleanSheet.Infrastructure.Migrations
                     Birthday = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Overall = table.Column<int>(type: "int", nullable: false),
                     KitNumber = table.Column<int>(type: "int", nullable: false),
-                    PlayerPosition = table.Column<int>(type: "int", nullable: false),
+                    Position = table.Column<int>(type: "int", nullable: false),
+                    Role = table.Column<int>(type: "int", nullable: false),
                     TeamId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)

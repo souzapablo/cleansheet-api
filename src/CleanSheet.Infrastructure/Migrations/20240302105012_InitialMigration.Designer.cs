@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CleanSheet.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240229224950_InitialMigration")]
+    [Migration("20240302105012_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -76,7 +76,10 @@ namespace CleanSheet.Infrastructure.Migrations
                     b.Property<int>("Overall")
                         .HasColumnType("int");
 
-                    b.Property<int>("PlayerPosition")
+                    b.Property<int>("Position")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Role")
                         .HasColumnType("int");
 
                     b.Property<Guid>("TeamId")
