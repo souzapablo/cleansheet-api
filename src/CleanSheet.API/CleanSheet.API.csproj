@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CleanSheet.Application\CleanSheet.Application.csproj" />
     <ProjectReference Include="..\CleanSheet.Infrastructure\CleanSheet.Infrastructure.csproj" />
   </ItemGroup>
 

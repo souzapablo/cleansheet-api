@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CleanSheet.Domain.Repositories;
+using CleanSheet.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,6 +13,16 @@ public static class DependencyInjection
 
         services.AddDbContext<ApplicationDbContext>(options =>
                    options.UseSqlServer(connectionString));
+
+        services.AddRepositories();
+
+        return services;
+    }
+
+    public static IServiceCollection AddRepositories(this IServiceCollection services)
+    {
+        services.AddTransient<IUserRepository, UserRepository>();
+        services.AddTransient<IUnitOfWork, UnitOfWork>();
 
         return services;
     }
