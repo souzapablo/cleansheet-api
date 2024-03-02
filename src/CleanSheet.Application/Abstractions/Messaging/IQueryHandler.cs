@@ -2,5 +2,5 @@
 using MediatR;
 
 namespace CleanSheet.Application.Abstractions.Messaging;
-internal interface IQueryHandler : IRequestHandler<IQuery>;
-internal interface IQueryHandler<TResponse> : IRequestHandler<IQuery, Result<TResponse>>;
+public interface IQueryHandler : IRequestHandler<IQuery, Result>;
+public interface IQueryHandler<TResponse> : IRequestHandler<IQuery<TResponse>, Result<TResponse>>;

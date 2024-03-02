@@ -3,5 +3,10 @@ using MediatR;
 
 namespace CleanSheet.Application.Abstractions.Messaging;
 
-internal interface ICommandHandler : IRequestHandler<ICommand, Result>;
-internal interface ICommandHandler<TValue> : IRequestHandler<ICommand<TValue>, Result<TValue>>;
+public interface ICommandHandler<TCommand> 
+    : IRequestHandler<TCommand, Result>
+    where TCommand : ICommand;
+
+public interface ICommandHandler<TCommand, TResponse>
+    : IRequestHandler<TCommand, Result<TResponse>>
+    where TCommand : ICommand<TResponse>;

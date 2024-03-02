@@ -1,4 +1,5 @@
-﻿using CleanSheet.Domain.Primitives;
+﻿using CleanSheet.Application.Abstractions.Messaging;
+using CleanSheet.Domain.Primitives;
 
 namespace CleanSheet.Application.Features.Users.Create;
 public class CreateUserCommandHandler : ICommandHandler<CreateUserCommand, Guid>

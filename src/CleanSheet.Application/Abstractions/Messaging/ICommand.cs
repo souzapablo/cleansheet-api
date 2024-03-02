@@ -2,6 +2,6 @@
 using MediatR;
 
 namespace CleanSheet.Application.Abstractions.Messaging;
-internal interface ICommand : IRequest<Result>;
+public interface ICommand : IRequest<Result>;
 
-internal interface ICommand<TResponse> : IRequest<Result<TResponse>>;
+public interface ICommand<TResponse> : IRequest<Result<TResponse>>;
