@@ -1,5 +1,5 @@
 using CleanSheet.Domain.Enums;
-using CleanSheet.Domain.Primities;
+using CleanSheet.Domain.Primitives;
 
 namespace CleanSheet.Domain.Entities;
 

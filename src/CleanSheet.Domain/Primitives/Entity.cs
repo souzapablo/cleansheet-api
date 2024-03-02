@@ -1,4 +1,4 @@
-namespace CleanSheet.Domain.Primities;
+namespace CleanSheet.Domain.Primitives;
 
 public abstract class Entity(Guid id)
 {
